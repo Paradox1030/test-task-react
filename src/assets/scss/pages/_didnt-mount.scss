@@ -1,0 +1,99 @@
+.didnt-mount {
+  max-width: 675px;
+  max-height: 444px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 94px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 76px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+
+  &__sub-title {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #999999;
+    max-width: 674px;
+    margin-bottom: 32px;
+
+    a {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      color: #4E74F5;
+      text-decoration: none;
+    }
+  }
+
+  &__cancel {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  form {
+    max-width: 420px;
+    width: 100%;
+
+    input {
+      height: 56px;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    height: 64px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (max-width: 688px) {
+    padding-top: 83px;
+    margin: 0 16px;
+
+    &__title {
+      font-size: 48px;
+    }
+  }
+
+  @media screen and (max-width: 606px) {
+
+    &__title {
+      font-size: 42px;
+      line-height: 52px;
+    }
+
+    &__sub-title {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+
+  @media screen and (max-width: 520px) {
+    &__title {
+      font-size: 32px;
+      line-height: 44px;
+    }
+
+    &__sub-title {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .btn {
+      height: 56px;
+    }
+  }
+}

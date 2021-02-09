@@ -1,0 +1,64 @@
+form {
+  display: flex;
+  flex-direction: column;
+
+  input[type='text'], input[type='password'] {
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    &.error {
+      border: 1px solid #F90043;
+    }
+
+    &:focus {
+      border: 1px solid #4E74F5;
+      outline: 0;
+    }
+
+    &::-moz-placeholder {
+      color: #E6E6E6;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #E6E6E6;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &:-ms-input-placeholder {
+      color: #E6E6E6;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &::-ms-input-placeholder {
+      color: #E6E6E6;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &::placeholder {
+      color: #E6E6E6;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  @media screen and (max-width: 618px) {
+    margin: 0 16px;
+  }
+
+}

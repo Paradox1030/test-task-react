@@ -1,0 +1,67 @@
+.sign-in {
+  max-width: 496px;
+  max-height: 526px;
+  margin: 0 auto;
+
+  &__title {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 76px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 16px;
+  }
+
+  &__sub-title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #999999;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &__text-or {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #999999;
+    margin: 12px 0;
+  }
+
+  &__reset-password {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #4E74F5;
+    display: block;
+    text-decoration: none;
+  }
+
+  &__error{
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #FB2424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      margin-left: 5px;
+    }
+  }
+
+  @media screen and (max-width: 516px) {
+    margin: 0;
+    max-height: 100%;
+    &__title {
+      font-size: 40px;
+      line-height: 54px;
+    }
+    &__sub-title {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+}

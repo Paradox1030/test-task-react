@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 24px 54px;
+  margin-bottom: 38px;
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+
+    span{
+      font-size: 14px;
+      line-height: 20px;
+      color: #999999;
+      margin-right: 24px;
+      text-decoration: none;
+    }
+
+    a:not(.btn__signup) {
+      font-size: 14px;
+      line-height: 20px;
+      color: #999999;
+      margin-right: 24px;
+      text-decoration: none;
+    }
+  }
+
+
+  @media screen and (max-width: 618px) {
+
+    padding: 22px 16px;
+
+    &__left {
+      img {
+        max-width: 114.36px;
+      }
+    }
+
+    &__right {
+      span {
+        display: none;
+      }
+
+      a {
+        margin-right: 0;
+      }
+    }
+  }
+}
